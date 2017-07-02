@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/sty.css">
+    <title>GPA-CALCULATOR</title>
+     <script type="text/javascript">
+        
+       function ans()
+       { var sel = document.getElementById("math").value;
+        var sel2 = document.getElementById("eng").value;
+        var sel3 = document.getElementById("edc").value;
+        var sel4 = document.getElementById("evs").value;
+        var sel5 = document.getElementById("pds").value;
+        var sel6 = document.getElementById("pdslab").value;
+        var sel7 = document.getElementById("eg").value;
+        var sel8 = document.getElementById("epl").value;
+        
+        var answer=(parseInt(sel * 4)+parseInt(sel2 * 4)+parseInt(sel3 * 3)+parseInt(sel4 * 3)+parseInt(sel5 * 3)+parseInt(sel6 * 2)+parseInt(sel7 * 4)+parseInt(sel8 * 2))/25;
+           console.log(answer);
+document.getElementById("here").innerHTML= "Your Gpa is " + answer;       }
+       </script>
+</head>
+<body>
+ <div id="wrapper">
+ <div class="container-fluid">
+           <nav class="navbar navbar-default " id="navbar" >
+               <div class="navbar-header">
+                       <a class="navbar-brand">GPA</a>
+               </div>
+     </nav>
+     </div>
+     <div class="container">
+     <h3>CEG CSE SEM II GPA CALCULATOR</h3>
+  <table class="table">
+      <thead>
+          <tr>
+              <th>S.no</th>
+              <th>Course Code</th>
+              <th>Course Name</th>
+              <th>Grade</th>
+          </tr>
+      </thead>
+      <tbody>
+          <td>1</td>
+          <th>CS7211</th>
+          <td>PROGRAMMING AND DATA STRUCTURES LAB I</td>
+          <td><select name="" id="pdslab" >
+           <option value="10">O</option>
+           <option value="9">A+</option>
+           <option value="8">A</option>
+           <option value="7">B+</option>
+           <option value="6">B</option>
+                   </select></td>
+      </tbody>
+      <tbody>
+          <td>2</td>
+          <th>CS7251</th>
+          <td>PROGRAMMING AND DATA STRUCTURES I</td>
+          <td><select name="" id="pds" >
+           <option value="10">O</option>
+           <option value="9">A+</option>
+           <option value="8">A</option>
+           <option value="7">B+</option>
+           <option value="6">B</option>
+                   </select></td>
+      </tbody>
+      <tbody>
+          <td>2</td>
+          <th>CS7211</th>
+          <td>PROGRAMMING AND DATA STRUCTURES LAB I</td>
+          <td><select name="" id="pdslab" >
+           <option value="10">O</option>
+           <option value="9">A+</option>
+           <option value="8">A</option>
+           <option value="7">B+</option>
+           <option value="6">B</option>
+                   </select></td>
+      </tbody>
+      <tbody>
+          <td>3</td>
+          <th>EC7253</th>
+          <td>ELECTRONIC DEVICES AND CIRCUITS FOR COMPUTER ENGINEERS</td>
+          <td><select name="" id="edc" >
+           <option value="10">O</option>
+           <option value="9">A+</option>
+           <option value="8">A</option>
+           <option value="7">B+</option>
+           <option value="6">B</option>
+                   </select></td>
+      </tbody>
+      <tbody>
+          <td>4</td>
+          <th>GE7152</th>
+          <td>ENGINEERING GRAPHICS</td>
+          <td><select name="" id="eg" >
+           <option value="10">O</option>
+           <option value="9">A+</option>
+           <option value="8">A</option>
+           <option value="7">B+</option>
+           <option value="6">B</option>
+                   </select></td>
+      </tbody>
+      <tbody>
+          <td>5</td>
+          <th>GE7162</th>
+          <td>ENGINEERING PRACTICES LAB</td>
+          <td><select name="" id="epl" >
+           <option value="10">O</option>
+           <option value="9">A+</option>
+           <option value="8">A</option>
+           <option value="7">B+</option>
+           <option value="6">B</option>
+                   </select></td>
+      </tbody>
+      <tbody>
+          <td>6</td>
+          <th>GE7251</th>
+          <td>ENVIRONMENTAL SCIENCE AND ENGINEERING</td>
+          <td><select name="" id="evs" >
+           <option value="10">O</option>
+           <option value="9">A+</option>
+           <option value="8">A</option>
+           <option value="7">B+</option>
+           <option value="6">B</option>
+                   </select></td>
+      </tbody>
+      <tbody>
+          <td>7</td>
+          <th>HS7251</th>
+          <td>TECHNICAL ENGLISH</td>
+          <td><select name="" id="eng" >
+           <option value="10">O</option>
+           <option value="9">A+</option>
+           <option value="8">A</option>
+           <option value="7">B+</option>
+           <option value="6">B</option>
+                   </select></td>
+      </tbody>
+        <tbody>
+          <td>8</td>
+          <th>MA7251</th>
+          <td>MATHEMATICS II</td>
+          <td><select name="" id="math" >
+           <option value="10">O</option>
+           <option value="9">A+</option>
+           <option value="8">A</option>
+           <option value="7">B+</option>
+           <option value="6">B</option>
+                   </select></td>
+      </tbody>
+      
+  </table>
+   <div class=" btn btn-primary pull-right"type="button " onclick="ans()">Calculate</div>
+   
+    </div>
+   <div id="here"></div>
+    </div>
+    </body>
+    
+</html>

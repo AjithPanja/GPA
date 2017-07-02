@@ -1,0 +1,40 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+   
+}
+#wrapper
+{
+    height: 800px;
+    width: 100%;
+}
+#here
+{
+    text-align: center;
+    color: #00c3ff;
+    font-family: rockwell;
+    font-size: 35px;
+}
+.navbar-brand
+{
+    font-family: rockwell;
+    color: white;
+}
+h3
+{
+    text-align: center;
+    font-family:rockwell ;
+}
+body
+{
+   background-color: #e6f9ff;
+}
+.navbar-default
+{
+    background-color: #80dfff;
+}
+.btn
+{
+    margin-bottom: 50px;
+}
