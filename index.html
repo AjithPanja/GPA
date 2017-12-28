@@ -11,16 +11,16 @@
      <script type="text/javascript">
         
        function ans()
-       { var sel = document.getElementById("math").value;
-        var sel2 = document.getElementById("eng").value;
-        var sel3 = document.getElementById("edc").value;
-        var sel4 = document.getElementById("evs").value;
-        var sel5 = document.getElementById("pds").value;
-        var sel6 = document.getElementById("pdslab").value;
-        var sel7 = document.getElementById("eg").value;
-        var sel8 = document.getElementById("epl").value;
+       { var sel = document.getElementById("oop").value;
+        var sel2 = document.getElementById("pds").value;
+        var sel3 = document.getElementById("pdslab").value;
+        var sel4 = document.getElementById("dl").value;
+        var sel5 = document.getElementById("se").value;
+        var sel6 = document.getElementById("eec").value;
+        var sel7 = document.getElementById("dpd").value;
+        var sel8 = document.getElementById("math").value;
         
-        var answer=(parseInt(sel * 4)+parseInt(sel2 * 4)+parseInt(sel3 * 3)+parseInt(sel4 * 3)+parseInt(sel5 * 3)+parseInt(sel6 * 2)+parseInt(sel7 * 4)+parseInt(sel8 * 2))/25;
+        var answer=(parseInt(sel * 3)+parseInt(sel2 * 3)+parseInt(sel3 * 2)+parseInt(sel4 * 2)+parseInt(sel5 * 3)+parseInt(sel6 * 3)+parseInt(sel7 * 3)+parseInt(sel8 * 4))/23;
            console.log(answer);
 document.getElementById("here").innerHTML= "Your Gpa is " + answer;       }
        </script>
@@ -47,9 +47,9 @@ document.getElementById("here").innerHTML= "Your Gpa is " + answer;       }
       </thead>
       <tbody>
           <td>1</td>
-          <th>CS7211</th>
-          <td>PROGRAMMING AND DATA STRUCTURES LAB I</td>
-          <td><select name="" id="pdslab" >
+          <th>CS7301</th>
+          <td>OBJECT ORIENTED PROGRAMMING</td>
+          <td><select name="" id="oop" >
            <option value="10">O</option>
            <option value="9">A+</option>
            <option value="8">A</option>
@@ -59,8 +59,8 @@ document.getElementById("here").innerHTML= "Your Gpa is " + answer;       }
       </tbody>
       <tbody>
           <td>2</td>
-          <th>CS7251</th>
-          <td>PROGRAMMING AND DATA STRUCTURES I</td>
+          <th>CS7302</th>
+          <td>PROGRAMMING AND DATA STRUCTURES II</td>
           <td><select name="" id="pds" >
            <option value="10">O</option>
            <option value="9">A+</option>
@@ -70,9 +70,9 @@ document.getElementById("here").innerHTML= "Your Gpa is " + answer;       }
                    </select></td>
       </tbody>
       <tbody>
-          <td>2</td>
-          <th>CS7211</th>
-          <td>PROGRAMMING AND DATA STRUCTURES LAB I</td>
+          <td>3</td>
+          <th>CS7312</th>
+          <td>PROGRAMMING AND DATA STRUCTURES LAB II</td>
           <td><select name="" id="pdslab" >
            <option value="10">O</option>
            <option value="9">A+</option>
@@ -82,22 +82,10 @@ document.getElementById("here").innerHTML= "Your Gpa is " + answer;       }
                    </select></td>
       </tbody>
       <tbody>
-          <td>3</td>
-          <th>EC7253</th>
-          <td>ELECTRONIC DEVICES AND CIRCUITS FOR COMPUTER ENGINEERS</td>
-          <td><select name="" id="edc" >
-           <option value="10">O</option>
-           <option value="9">A+</option>
-           <option value="8">A</option>
-           <option value="7">B+</option>
-           <option value="6">B</option>
-                   </select></td>
-      </tbody>
-      <tbody>
           <td>4</td>
-          <th>GE7152</th>
-          <td>ENGINEERING GRAPHICS</td>
-          <td><select name="" id="eg" >
+          <th>CS7311</th>
+          <td>DIGITAL LAB</td>
+          <td><select name="" id="dl" >
            <option value="10">O</option>
            <option value="9">A+</option>
            <option value="8">A</option>
@@ -107,9 +95,9 @@ document.getElementById("here").innerHTML= "Your Gpa is " + answer;       }
       </tbody>
       <tbody>
           <td>5</td>
-          <th>GE7162</th>
-          <td>ENGINEERING PRACTICES LAB</td>
-          <td><select name="" id="epl" >
+          <th>CS7351</th>
+          <td>SOFTWARE ENGINEERING</td>
+          <td><select name="" id="se" >
            <option value="10">O</option>
            <option value="9">A+</option>
            <option value="8">A</option>
@@ -119,9 +107,9 @@ document.getElementById("here").innerHTML= "Your Gpa is " + answer;       }
       </tbody>
       <tbody>
           <td>6</td>
-          <th>GE7251</th>
-          <td>ENVIRONMENTAL SCIENCE AND ENGINEERING</td>
-          <td><select name="" id="evs" >
+          <th>EE7306</th>
+          <td>ELECTRICAL ENGINEERING AND CONTROL SYSTEMS</td>
+          <td><select name="" id="eec" >
            <option value="10">O</option>
            <option value="9">A+</option>
            <option value="8">A</option>
@@ -131,9 +119,9 @@ document.getElementById("here").innerHTML= "Your Gpa is " + answer;       }
       </tbody>
       <tbody>
           <td>7</td>
-          <th>HS7251</th>
-          <td>TECHNICAL ENGLISH</td>
-          <td><select name="" id="eng" >
+          <th>IT7351</th>
+          <td>DIGITAL PRINCIPLES AND DESIGN</td>
+          <td><select name="" id="dpd" >
            <option value="10">O</option>
            <option value="9">A+</option>
            <option value="8">A</option>
@@ -143,8 +131,8 @@ document.getElementById("here").innerHTML= "Your Gpa is " + answer;       }
       </tbody>
         <tbody>
           <td>8</td>
-          <th>MA7251</th>
-          <td>MATHEMATICS II</td>
+          <th>MA7359</th>
+          <td>ALGEBRA AND NUMBER THEORY</td>
           <td><select name="" id="math" >
            <option value="10">O</option>
            <option value="9">A+</option>
