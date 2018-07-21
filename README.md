@@ -1,2 +1,2 @@
 # GPA
-CEG CSE 2ND SEM GPA calculator
+CEG CSE 3RD SEM GPA calculator
